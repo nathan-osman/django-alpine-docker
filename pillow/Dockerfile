@@ -5,9 +5,11 @@ LABEL maintainer="Nathan Osman <nathan@quickmediasolutions.com>"
 #  (Pillow is built with support for JPEG and PNG)
 RUN \
     apk add --no-cache \
+        build-base \
         jpeg-dev \
         zlib-dev && \
     pip3 install --no-cache-dir Pillow && \
     apk del \
+        build-base \
         jpeg-dev \
         zlib-dev
