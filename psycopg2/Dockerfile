@@ -1,8 +1,8 @@
 FROM nathanosman/django-alpine:base
 LABEL maintainer="Nathan Osman <nathan@quickmediasolutions.com>"
 
-# Install postgresql-dev so that psycopg2 can be built; then remove it
+# Install the required packages for building psycopg2; then remove them
 RUN \
-    apk add --no-cache postgresql-dev && \
+    apk add --no-cache build-base postgresql-dev && \
     pip3 install --no-cache-dir psycopg2 && \
-    apk del postgresql-dev
+    apk del build-base postgresql-dev
