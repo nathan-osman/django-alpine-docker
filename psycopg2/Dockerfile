@@ -5,6 +5,7 @@ LABEL maintainer="Nathan Osman <nathan@quickmediasolutions.com>"
 RUN \
     apk add --no-cache \
         build-base \
+        libpq \
         postgresql-dev \
         python3-dev && \
     pip3 install --no-cache-dir psycopg2 && \

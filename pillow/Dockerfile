@@ -6,6 +6,7 @@ LABEL maintainer="Nathan Osman <nathan@quickmediasolutions.com>"
 RUN \
     apk add --no-cache \
         build-base \
+        jpeg \
         jpeg-dev \
         python3-dev \
         zlib-dev && \
