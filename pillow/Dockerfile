@@ -7,9 +7,11 @@ RUN \
     apk add --no-cache \
         build-base \
         jpeg-dev \
+        python3-dev \
         zlib-dev && \
     pip3 install --no-cache-dir Pillow && \
     apk del \
         build-base \
         jpeg-dev \
+        python3-dev \
         zlib-dev
