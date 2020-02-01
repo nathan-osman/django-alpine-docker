@@ -7,7 +7,7 @@ RUN \
         build-base \
         libstdc++ \
         python3-dev && \
-    pip3 install --no-cache-dir django-compressor && \
+    pip3 install --no-cache-dir django-libsass django_compressor && \
     apk del \
         build-base \
         python3-dev
