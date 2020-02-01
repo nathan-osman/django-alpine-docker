@@ -13,6 +13,10 @@ This image provides the bare minimum necessary for running a Django application.
 
 This image provides everything in the base image as well as the psycopg2 Python package, enabling support for PostgreSQL database connections.
 
+#### nathanosman/docker-alpine:compressor
+
+This image provides everything in the psycopg2 image as well as django-compressor and the libsass library.
+
 #### nathanosman/docker-alpine:pillow
 
-This image provides everything in the psycopg2 image as well as the Pillow Python package, enabling image reading / writing / editing.
+This image provides everything in the compressor image as well as the Pillow Python package, enabling image reading / writing / editing.

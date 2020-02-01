@@ -1,4 +1,4 @@
-FROM nathanosman/django-alpine:psycopg2
+FROM nathanosman/django-alpine:compressor
 LABEL maintainer="Nathan Osman <nathan@quickmediasolutions.com>"
 
 # Install the required packages for building Pillow; then remove them
