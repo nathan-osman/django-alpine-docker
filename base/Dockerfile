@@ -5,5 +5,6 @@ LABEL maintainer="Nathan Osman <nathan@quickmediasolutions.com>"
 RUN \
     apk add --no-cache \
         uwsgi-http \
-        uwsgi-python && \
-    pip3 install --no-cache-dir Django
+        uwsgi-python \
+        py3-pip && \
+    pip install --no-cache-dir Django
