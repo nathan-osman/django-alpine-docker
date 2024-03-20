@@ -8,7 +8,7 @@ RUN \
         libpq \
         postgresql-dev \
         python3-dev && \
-    pip install --no-cache-dir psycopg2 && \
+    pip install --no-cache-dir --break-system-packages psycopg2 && \
     apk del \
         build-base \
         postgresql-dev \
