@@ -7,4 +7,4 @@ RUN \
         uwsgi-http \
         uwsgi-python \
         py3-pip && \
-    pip install --no-cache-dir Django
+    pip install --no-cache-dir --break-system-packages Django
