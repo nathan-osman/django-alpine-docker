@@ -10,7 +10,7 @@ RUN \
         jpeg-dev \
         python3-dev \
         zlib-dev && \
-    pip install --no-cache-dir Pillow && \
+    pip install --no-cache-dir --break-system-packages Pillow && \
     apk del \
         build-base \
         jpeg-dev \
